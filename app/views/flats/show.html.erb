@@ -5,3 +5,8 @@
   <li>Price per night: $<%= @flat.price_per_night %></li>
   <li>Number of guests: <%= @flat.number_of_guests %></li>
 </ul>
+
+<%= link_to "Back to flats", flats_path %>
+<%= link_to "Edit this flat", edit_flat_path %>
+<%= link_to "Delete this flat", flat_path(@flat),
+      data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
