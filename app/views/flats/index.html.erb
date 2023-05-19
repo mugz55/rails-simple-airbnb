@@ -1,0 +1,7 @@
+<h1>AIRBNB</h1>
+
+<% @flats.each do |flat| %>
+  <%= link_to flat.name, flat %>
+<% end %>
+
+<%= link_to "Add a new flat", new_flat_path %>
